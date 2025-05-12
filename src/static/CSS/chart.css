@@ -1,0 +1,15 @@
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myChart {
+    width: 800px;
+}
+
+@media (max-width: 500px) {
+    #myChart {
+        width: 400px;
+    }
+}
