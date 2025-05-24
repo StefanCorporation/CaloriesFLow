@@ -1,33 +1,13 @@
-.grid-container {
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 400px 400px 400px;
-    gap: 10px;
-}
-
-.col1 {
-    background-color: blue;
+.item {
+    background-color: aqua;
+    border: solid black;   
+    width: 200px;         
+    height: 200px;  
 }
 
 
-.col2 {
-    background-color: blue;
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
 }
-
-.col3 {
-    background-color: blue;
-}
-
-.col4 {
-    background-color: blue;
-}
-
-.col5 {
-    background-color: blue;
-}
-
-.col6 {
-    background-color: blue;
-}
-

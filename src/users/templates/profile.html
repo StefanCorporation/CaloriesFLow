@@ -9,15 +9,66 @@
 
 <link rel="stylesheet" href="{% static 'CSS/profile.css' %}">
 
-<div class="grid-container">
-    <div class="col1">
-        <img src="{% static 'images/noavatar.png' %}">
-    </div>
-    <div class="col2"></div>
-    <div class="col3"></div>
-    <div class="col4"></div>
-    <div class="col5"></div>
-    <div class="col6"></div>
-</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-4 col-lg-3 g-5 mx-5">
+            <div>
+              <img class="profile-image" src="{% static 'images/no-profile.png' %}" alt="no-image">
+            </div>
+        </div>
+
+
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="firstname" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstname">
+            </div>
+            <div class="col-md-6">
+              <label for="lastname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastname">
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter Password">
+            </div>
+            <div class="col-12">
+                <label for="password" class="form-label">Submit Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Submit Password">
+              </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+  </div>
+  
+  
+
 
 {% endblock %}
