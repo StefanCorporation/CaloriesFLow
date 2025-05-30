@@ -1,13 +1,10 @@
-.item {
-    background-color: aqua;
-    border: solid black;   
-    width: 200px;         
-    height: 200px;  
-}
-
-
 .profile-image {
     width: 200px;
     height: 200px;
     border-radius: 30%;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
 }
