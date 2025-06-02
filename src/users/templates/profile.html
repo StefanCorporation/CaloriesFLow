@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-4 col-lg-3 g-5 mx-5">
-                <div>
+                <div class="mx-5">
                   <img class="profile-image" src="{% static 'images/no-profile.png' %}" alt="no-image">
                 </div>
             </div>
@@ -46,14 +46,16 @@
                     <input type="password" class="form-control" id="password" placeholder="Submit Password">
                   </div>
                 <div class="col-12">
-                      <h2 class="slider">Age: <span id="value"></span></h2>
+                      <h2 class="slider">Age: <span class="slider-age" id="value3"></span></h2>
                     <label for="customRange3" class="form-label">Chose your age</label>
-                    <input type="range" class="form-range" value="10" min="10" max="80" step="1" id="customRange3">
+                    <input type="range" class="form-range slider-range" value="10" min="10" max="80" step="1" id="customRange3">
                 </div>
                 <div class="col-12">
-                      <h2 class="slider">Weight: <span id="value"></span></h2>
+                      <h2 class="slider">Weight:
+                        <span class="slider-weight"><span id="value4"></span> Kg.</span>
+                      </h2>
                     <label for="customRange4" class="form-label">Chose your weight</label>
-                    <input type="range" class="form-range" value="10" min="10" max="200" step="1" id="customRange4">
+                    <input type="range" class="form-range slider-range" value="10" min="10" max="200" step="1" id="customRange4">
                 </div>
 
 
