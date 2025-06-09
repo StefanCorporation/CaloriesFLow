@@ -1,0 +1,9 @@
+.background-img {
+    background-image: url('/static/images/caloriesfight2.png') !important; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
