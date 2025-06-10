@@ -7,6 +7,7 @@ new Chart(ctx, {
     datasets: [{
       label: '# of Votes',
       data: [12, 19, 3, 5, 2, 3, ],
+      options: { responsive: true,},
       hoverOffset: 5,
       backgroundColor: [
         'rgb(255, 99, 132)',
