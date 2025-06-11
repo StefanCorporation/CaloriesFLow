@@ -20,29 +20,36 @@
                 <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1> 
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">            
                 </button> </div> <div class="modal-body p-5 pt-0"> 
-                    <form class=""> 
+                    <form action="{% url 'users:registration' %}" method="post">
+                        {% csrf_token %} 
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Enter first name"> 
+                            <input type="text" class="form-control rounded-3" name="first_name"
+                                id="floatingInput" value="{{ form.first_name.value }}" placeholder="Enter first name"> 
                             <label for="floatingInput">First Name</label> 
                         </div> 
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Enter last name"> 
+                            <input type="text" class="form-control rounded-3" name="last_name"
+                                id="floatingInput" value="{{ form.last_name.value }}" placeholder="Enter last name"> 
                             <label for="floatingInput">Last Name</label> 
                         </div>
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control rounded-3" id="floatingInput" placeholder=" Username"> 
+                            <input type="text" class="form-control rounded-3" name="username"
+                                id="floatingInput" value="{{ form.username.value }}" placeholder=" Username"> 
                             <label for="floatingInput">Username</label> 
                         </div>
                         <div class="form-floating mb-3"> 
-                            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com"> 
+                            <input type="email" class="form-control rounded-3" name="email"
+                                id="floatingInput" value="{{ form.email.value }}" placeholder="name@example.com"> 
                             <label for="floatingInput">Email address</label> 
                         </div> 
                         <div class="form-floating mb-3"> 
-                            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Enter password"> 
+                            <input type="password" class="form-control rounded-3" name="password1"
+                                id="floatingPassword" value="{{ form.password1.value }}" placeholder="Enter password"> 
                             <label for="floatingPassword">Password</label> 
                         </div>
                         <div class="form-floating mb-3"> 
-                            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Confirm password"> 
+                            <input type="password" class="form-control rounded-3" name="password2"
+                                id="floatingPassword" value="{{ form.password2.value }}" placeholder="Confirm password"> 
                             <label for="floatingPassword">Confirm Password</label> 
                         </div>
                             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button> 

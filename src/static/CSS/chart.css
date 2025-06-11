@@ -1,20 +1,3 @@
-/* .chart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-canvas {
-    width: 50% !important;
-    height: auto !important;
-}
-
-@media (max-width: 500px) {
-    .chart-container {
-        width: 900px;
-    }
-} */
-
 #myChart {
   width: 100% !important;
   height: auto !important;
